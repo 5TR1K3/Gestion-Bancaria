@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Creación de Usuario Cajero</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cajero-container">
+  <div class="cajero-left-column">
+    <form id="leftForm">
+      <div class="cajero-form-group">
+      <label class="cajero-label" for="nombre">Nombre Completo:</label>  
+        <input class="cajero-input" type="text" id="nombre" name="nombre" pattern="[A-Za-z\s]+" required>
+      </div>
+      <div class="cajero-form-group">
+        <label class="cajero-label" for="edad">Edad:</label>
+        <input class="cajero-input" type="number" id="edad" name="edad" min="18" max="99" required>
+      </div>
+      <div class="cajero-form-group">
+        <label class="cajero-label" for="direccion">Dirección:</label>
+        <input class="cajero-input" type="text" id="direccion" name="direccion" required>
+      </div>
+      <div class="cajero-form-group">
+        <label class="cajero-label" for="email">Correo Electrónico:</label>
+        <input class="cajero-input" type="email" id="email" name="email" required>
+      </div>
+   
+    </form>
+  </div>
+  <div class="cajero-right-column">
+    <form id="rightForm">
+      <div class="cajero-form-group">
+        <label class="cajero-label" for="usuario">Usuario:</label>
+        <input class="cajero-input" type="text" id="usuario" name="usuario" pattern="[A-Za-z]+" required>
+      </div>
+      <div class="cajero-form-group">
+        <label class="cajero-label" for="password">Contraseña:</label>
+        <input class="cajero-input" type="password" id="password" name="password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
+    </div>
+      <div class="cajero-checkbox-group">
+        <label class="cajero-label">Tipo de Usuario:</label><br>
+        <input type="checkbox" id="cliente" name="cliente" value="Cliente">
+          <label for="cliente">Cliente</label><br>
+        <input type="checkbox" id="dependiente" name="dependiente" value="Usuario Dependiente">
+        <label for="dependiente">Usuario Dependiente</label><br>
+        <input type="checkbox" id="ambas" name="ambas" value="Ambas">
+        <label for="ambas">Ambas</label><br>
+        
+      </div>
+
+      <button id="cajero-submit-button" type="submit">Enviar</button>
+    </form>
+  </div>
+ 
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
