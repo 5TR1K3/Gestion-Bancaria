@@ -47,9 +47,9 @@ if (isset($_POST['op'])) {
             //echo '<p style="margin: 15px 0;">Se inserto ' . $sentenceNewCuentaBancaria->affected_rows . ' nueva cuenta bancaria</p>';
             $sentenceNewCuentaBancaria->close();
 
-            header('Location: /DSS02L/Banco/vistas/Usuario/Home.php');
+            header('Location: /Gestion-Bancaria/vistas/Usuario/Home.php');
         } else {
-            header('Location: /DSS02L/Banco/vistas/General/formdui.php');
+            header('Location: /Gestion-Bancaria/vistas/General/formdui.php');
         }
     }
 }

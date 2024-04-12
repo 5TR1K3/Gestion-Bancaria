@@ -29,7 +29,7 @@ if (isset($_POST['op'])) {
                     
                     $db->close();
 
-                    header('Location: /DSS02L/Banco/vistas/General/Inicio.php');
+                    header('Location: /Gestion-Bancaria/vistas/General/Inicio.php');
                 } else {
                     
                     $db->close();
@@ -38,7 +38,7 @@ if (isset($_POST['op'])) {
                     $_SESSION['message'] = "Credenciales no validas.\nContraseña incorrecta. Vuelve a intentarlo o haz clic en \"¿Haz olvidado tu contraseña?\"";
                     $_SESSION['message_type'] = 'danger';
 
-                    header("Location: /DSS02L/Banco/index.php");
+                    header("Location: /Gestion-Bancaria/index.php");
                 }
                 
             } else {
@@ -57,7 +57,7 @@ if (isset($_POST['op'])) {
                         
                         $db->close();
 
-                        header('Location: /DSS02L/Banco/vistas/General/Inicio.php');
+                        header('Location: /Gestion-Bancaria/vistas/General/Inicio.php');
                     } else {
 
                         $db->close();
@@ -66,7 +66,7 @@ if (isset($_POST['op'])) {
                         $_SESSION['message'] = "Credenciales no validas.\nContraseña incorrecta. Vuelve a intentarlo o haz clic en \"¿Haz olvidado tu contraseña?\"";
                         $_SESSION['message_type'] = 'danger';
 
-                        header("Location: /DSS02L/Banco/index.php");
+                        header("Location: /Gestion-Bancaria/index.php");
                     }
                 } else {
 
@@ -76,7 +76,7 @@ if (isset($_POST['op'])) {
                     $_SESSION['message'] = "Credenciales no validas.\nCorreo no registrado, vuelva a intentarlo o haz clic en \"Registrate\"";
                     $_SESSION['message_type'] = 'danger';
 
-                    header("Location: /DSS02L/Banco/index.php"); 
+                    header("Location: /Gestion-Bancaria/index.php"); 
                 }
             }
         } else {
@@ -109,7 +109,7 @@ if (isset($_POST['op'])) {
                 $_SESSION['message'] = "El usuario ya se encuentra registrado.\nInicia sesion o haz clic en \"¿Haz olvidado tu contraseña?\".";
                 $_SESSION['message_type'] = 'info';
 
-                header("Location: /DSS02L/Banco/index.php");
+                header("Location: /Gestion-Bancaria/index.php");
             } else {
                 //-----------------------------------------------------------------------
                 //Aplicamos formato de primera letra mayúscula para los nombres y apellidos
@@ -195,7 +195,7 @@ if (isset($_POST['op'])) {
 
                 //echo '<p style="margin: 15px 0;">CUENTA BANCARIA CREADA SATISFACTORIAMENTE!</p>';
                 //-----------------------------------------------------------------------
-                header('Location: /DSS02L/Banco/vistas/General/exito-crearusuario.php');
+                header('Location: /Gestion-Bancaria/vistas/General/exito-crearusuario.php');
             }
         }
     }
@@ -216,7 +216,7 @@ if (isset($_POST['op'])) {
 
                 $db->close();
 
-                header('Location: /DSS02L/Banco/vistas/Usuario/reset-password.php');
+                header('Location: /Gestion-Bancaria/vistas/Usuario/reset-password.php');
             } else {
                 
                 $db->close();
@@ -225,7 +225,7 @@ if (isset($_POST['op'])) {
                 $_SESSION['message'] = "$correo\nNo se encuentra registrado.";
                 $_SESSION['message_type'] = 'danger';
 
-                header("Location: /DSS02L/Banco/vistas/Usuario/forgot-password.php");
+                header("Location: /Gestion-Bancaria/vistas/Usuario/forgot-password.php");
             }
 
         }
@@ -245,9 +245,9 @@ if (isset($_POST['op'])) {
             $db->close();
 
             if ($filasAfectadas >= 1) {
-                header('Location: /DSS02L/Banco/vistas/General/exito-password.php');
+                header('Location: /Gestion-Bancaria/vistas/General/exito-password.php');
             } else {
-                header("Location: /DSS02L/Banco/vistas/Errores/error-password.php");
+                header("Location: /Gestion-Bancaria/vistas/Errores/error-password.php");
             }
 
         }
@@ -287,7 +287,7 @@ if (isset($_POST['op'])) {
 
                 $db->close();
 
-                header("Location: /DSS02L/Banco/vistas/Usuario/Perfil.php");
+                header("Location: /Gestion-Bancaria/vistas/Usuario/Perfil.php");
             } else {
                 $_SESSION['parameter'] = 'Error';
                 $_SESSION['message'] = "Error al guardar lo cambios. Intentelo de nuevo.";
@@ -295,7 +295,7 @@ if (isset($_POST['op'])) {
 
                 $db->close();
 
-                header("Location: /DSS02L/Banco/vistas/Usuario/Perfil.php");
+                header("Location: /Gestion-Bancaria/vistas/Usuario/Perfil.php");
             }
         }
     }
@@ -306,6 +306,6 @@ if (isset($_POST['op'])) {
 
     if ($op == 'logout') {
         session_unset();
-        header('Location: /DSS02L/Banco/index.php');
+        header('Location: /Gestion-Bancaria/index.php');
     }
 }

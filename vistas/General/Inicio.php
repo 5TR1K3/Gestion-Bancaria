@@ -1,11 +1,11 @@
 <?php
 session_start();
-if (!isset($_SESSION['rol'])) header('Location: /DSS02L/Banco/vistas/Errores/Error404.php');
+if (!isset($_SESSION['rol'])) header('Location: /Gestion-Bancaria/vistas/Errores/Error404.php');
 
 
 switch ($_SESSION['rol']) {
     case 'Gerente General':
-        header('Location: /DSS02L/Banco/vistas/GerenteGeneral/Menu.php');
+        header('Location: /Gestion-Bancaria/vistas/GerenteGeneral/Menu.php');
         break;
     case 'Gerente Sucursal':
         include('../templates/header.php');
@@ -20,7 +20,7 @@ switch ($_SESSION['rol']) {
         echo '<h1>Soy Dependiente</h1>';
         break;
     case 'Cliente':
-        header('Location: /DSS02L/Banco/vistas/Usuario/Home.php');
+        header('Location: /Gestion-Bancaria/vistas/Usuario/Home.php');
         break;
 
     default:
