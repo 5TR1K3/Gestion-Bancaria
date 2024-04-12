@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: lightgray;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 420px;
+    background-color: white;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper form .title h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+
+.wrapper form .title img {
+    width: 100%;
+}
+
+.wrapper form .title .img {
+    margin: 0 auto;
+    width: 100px;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(17, 92, 255, 0.274);
+    border-radius: 40px;
+    font-size: 16px;
+    color: dimgrey;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: gray;
+}
+
+.input-box i {
+    color: dimgray;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    width: 100%;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: rgb(0, 132, 255);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color: rgb(0, 132, 255);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+/*pagina de inicio de cajero*/
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Alineación a la izquierda */
+    width: 600px;
+    /* Ajustar el ancho del contenedor */
+    padding: 120px;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+    /* Margen derecho para crear espacio entre el contenedor y otros elementos */
+    margin-bottom: 40px;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 25px;
+    /* Ajustar el tamaño de los botones */
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: rgba(60, 63, 66, 0.219);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgba(86, 228, 247, 0.7);
+}
+
+.info-container {
+    text-align: center;
+    margin-top: 20px;
+    /* Agregar espacio de separación entre el contenedor y la imagen */
+}
+
+.info-container img {
+    max-width: 130%;
+    /* Hacer la imagen más ancha */
+    height: auto;
+    /* Ajustar la altura de la imagen automáticamente */
+}
+
+/* Mover el contenedor de imágenes más a la izquierda */
+.info-container {
+    margin-left: 250px;
+    /* Ajustar el margen izquierdo según sea necesario */
+}
+
+
+
+
+
+
+
+
+
+/* CREACION DE USUARIO CAJERO */
+
+
+
+/* Estilos adicionales para ajustar la anchura y la posición de los campos */
+.cajero-input[type="text"],
+.cajero-input[type="email"],
+.cajero-input[type="password"],
+.cajero-input[type="number"] {
+    width: calc(100% - 22px);
+    /* Anchura menos relleno y borde */
+    padding: 15px;
+    /* Ajustar el relleno para hacer los campos más grandes */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    /* Ajustar el radio del borde para hacer los campos más redondeados */
+    font-size: 18px;
+    /* Ajustar el tamaño del texto */
+    margin-bottom: 20px;
+    /* Ajustar el espacio entre los campos */
+}
+
+/* Ajustar la anchura de los campos de la izquierda y la derecha */
+.cajero-left-column input[type="text"],
+.cajero-left-column input[type="email"],
+.cajero-left-column input[type="password"],
+.cajero-left-column input[type="number"] {
+    width: 100%;
+    /* Ajustar la anchura al 100% para ocupar todo el espacio disponible */
+    text-align: left;
+    /* Alinear el texto a la izquierda dentro de los campos */
+}
+
+.cajero-right-column input[type="text"],
+.cajero-right-column input[type="email"],
+.cajero-right-column input[type="password"],
+.cajero-right-column input[type="number"] {
+    width: 100%;
+    /* Ajustar la anchura al 100% para ocupar todo el espacio disponible */
+    text-align: left;
+    /* Alinear el texto a la izquierda dentro de los campos */
+}
+
+
+/* Alinear los campos de la izquierda más a la izquierda */
+.cajero-left-column {
+    float: left;
+    width: 45%;
+    text-align: left;
+}
+
+/* Alinear los campos de la derecha más a la derecha */
+.cajero-right-column {
+    float: right;
+    width: 45%;
+
+}
+
+/* Ocultar checkbox original */
+.cajero-checkbox-group input[type="checkbox"] {
+    display: none;
+}
+
+/* Estilos para el checkbox personalizado */
+.cajero-checkbox-group label {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    /* Espacio para el checkbox personalizado */
+    margin-right: 15px;
+    /* Margen entre los checkbox personalizados */
+    cursor: pointer;
+}
+
+.cajero-checkbox-group label:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    /* Tamaño del checkbox personalizado */
+    height: 25px;
+    /* Tamaño del checkbox personalizado */
+    border: 2px solid #ccc;
+    /* Borde del checkbox personalizado */
+    border-radius: 5px;
+    /* Borde redondeado */
+}
+
+/* Estilos para el checkbox cuando está marcado */
+.cajero-checkbox-group input[type="checkbox"]:checked+label:before {
+    background-color: #007bff;
+    /* Color de fondo cuando está marcado */
+}
+
+/* Aumentar el tamaño del botón de enviar */
+#cajero-submit-button {
+    font-size: 20px !important;
+    /* Tamaño de la fuente del botón */
+    padding: 15px 30px !important;
+    /* Ajustar el relleno del botón para hacerlo más grande */
+    border-radius: 10px !important;
+    /* Ajustar el radio del borde para hacer el botón más redondeado */
+}
+
+
+
+
+/*ABONO O RETIRO */
+
+
+.containerr {
+    display: flex;
+    justify-content: center;
+    /* Centrar horizontalmente los contenedores */
+    align-items: flex-start;
+    /* Alineación a la izquierda */
+    padding: 20px;
+    /* Ajustar el espaciado entre los contenedores y la imagen */
+}
+
+.side-panel,
+.main-content {
+    width: 50%;
+    margin-right: 2%;
+}
+
+.info-container {
+    width: 50%;
+    /* Ajustar el ancho del contenedor de la imagen */
+    margin-left: 2%;
+}
+
+.info-container img {
+    width: 600px;
+    /* Ancho específico */
+    height: 660px;
+    /* Altura específica */
+    max-width: 100%;
+    /* Hacer la imagen más ancha */
+    height: auto;
+    /* Ajustar la altura de la imagen automáticamente */
+    margin-left: auto;
+    /* Centrar la imagen horizontalmente */
+    margin-right: auto;
+    /* Centrar la imagen horizontalmente */
+}
+
+
+/* Estilos para botones */
+.button {
+    display: block;
+    width: 70%;
+    padding: 20px;
+    /* Ajustar el tamaño de los botones */
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: rgba(60, 63, 66, 0.219);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    /* Tamaño de la letra de los botones */
+}
+
+.button:hover {
+    background-color: rgba(86, 228, 247, 0.7);
+}
+
+/* Estilos para campos de entrada de texto */
+.input-wrapper {
+    margin-bottom: 20px;
+    /* Espacio inferior entre los pares de campos de texto */
+}
+
+/* Ajustar el último campo de entrada para que no tenga margen derecho */
+input[type="text"]:last-child,
+input[type="number"]:last-child {
+    margin-right: 0;
+}
+
+/* Ajustes para Opera */
+@supports (-webkit-appearance:none) {
+    .input-box i {
+        right: 30px;
+    }
+
+    .wrapper .btn {
+        font-size: 18px;
+    }
+
+    .wrapper .register-link {
+        font-size: 15px;
+    }
+}
