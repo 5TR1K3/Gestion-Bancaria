@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registro de usuario en linea</title>
+  <link rel="stylesheet" href="../assets/css/all.css" />
+  <link rel="stylesheet" href="../assets/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/css/fontawesome.css" />
+  <link rel="stylesheet" href="../assets/css/fontawesome.min.css" />
   <link rel="stylesheet" href="../assets/css/style.signup.css">
 </head>
 
@@ -16,6 +20,7 @@
     <div class="salir">
       <a href="../index.php">
         <p>Salir</p>
+        <i class="fa-sharp fa-solid fa-right-from-bracket"></i>
       </a>
     </div>
   </div>
