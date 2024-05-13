@@ -55,9 +55,9 @@ class UsuarioController extends Controller
         //Operador
         $op = '';
 
-        //Patrones
-        $patronDui = '/^[[0-9]{9}]$/';
-        $patronUserEmpleado = '/^[A-Za-z{3}[0-9]{9}]$/';
+                //Patrones
+                $patronDui = '/^\d{9}$/';
+                $patronUserEmpleado = '/^([A-Z]||[a-z]){3}\d{9}$/';
 
         if (strpos($cuenta, '@') !== false) {
             $op = 'correo';
